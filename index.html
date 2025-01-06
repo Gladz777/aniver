@@ -1,200 +1,200 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site especial de aniversário para minha namorada, com memórias e contadores emocionantes sobre nossa história.">
-    <title>Feliz Aniversário</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #333;
-            color: #fff;
-            background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2220%22 fill=%22rgba(255,192,203,0.1)%22 text-anchor=%22middle%22%3E%26hearts%3B%3C/text%3E%3C/svg%3E');
-            background-repeat: repeat;
-        }
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site especial de aniversário para minha namorada, com memórias e contadores emocionantes sobre nossa história.">
+        <title>Feliz Aniversário</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #333;
+                color: #fff;
+                background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2220%22 fill=%22rgba(255,192,203,0.1)%22 text-anchor=%22middle%22%3E%26hearts%3B%3C/text%3E%3C/svg%3E');
+                background-repeat: repeat;
+            }
 
-        .hero {
-            height: 900px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('img/IMG_3796.jpg') no-repeat center center/cover;
-            color: white;
-            padding: 2px;
-        }
+            .hero {
+                height: 900px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: url('img/IMG_3796.jpg') no-repeat center center/cover;
+                color: white;
+                padding: 2px;
+            }
 
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 500px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }   
+            .hero h1 {
+                font-size: 2.5em;
+                margin-bottom: 500px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }   
 
-        .hero button {
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #333;
-            background: #ff69b4;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
+            .hero button {
+                padding: 10px 20px;
+                font-size: 1em;
+                color: #333;
+                background: #ff69b4;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
 
-        .hero button:hover {
-            background-color: #ff85c5;
-        }
+            .hero button:hover {
+                background-color: #ff85c5;
+            }
 
-        
-        .fade-in {
-            font-size: 1.8em;
-            text-align: center;
-            margin: 60px auto;
-            max-width: 90%;
-            opacity: 0;
-            animation: fadeIn 15s forwards;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        }
+            
+            .fade-in {
+                font-size: 1.8em;
+                text-align: center;
+                margin: 60px auto;
+                max-width: 90%;
+                opacity: 0;
+                animation: fadeIn 15s forwards;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
 
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
+            @keyframes fadeIn {
+                to { opacity: 1; }
+            }
 
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
+            .section {
+                padding: 40px 20px;
+                text-align: center;
+            }
 
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            text-align: center;
-        }
+            .section h2 {
+                margin-bottom: 20px;
+                font-size: 1.8em;
+                text-align: center;
+            }
 
-        .photos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
-        }
+            .photos {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 10px;
+            }
 
-        .photos img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(255, 192, 203, 0.5);
-        }
+            .photos img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px #ff69b4;
+            }
 
-        .counters {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+            .counters {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
 
-        .counter {
-            font-size: 1.2em;
-            color: #ff69b4;
-        }
+            .counter {
+                font-size: 1.2em;
+                color: #ff69b4;
+            }
 
-        .counter img {
-            margin-top: 10px;
-            width: 100%;
-            max-width: 200px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(255, 192, 203, 0.5);
-        }
+            .counter img {
+                margin-top: 10px;
+                width: 100%;
+                max-width: 200px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px #ff69b4;
+            }
 
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #444;
-            color: white;
-        }
-    </style>
-</head>
-<body>
+            .footer {
+                text-align: center;
+                padding: 20px;
+                background: #ff69b4;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
 
-    <div class="hero">
-        <h1>Feliz Aniversário, minha princesa!</h1>
-        <button onclick="scrollToNextSection()">Clique aqui, minha linda</button>
-    </div>
-
-    <div class="fade-in">
-        Eu te amo de uma forma surreal, meu amor. Ver você feliz é o que me traz felicidade. Agradeço a Deus todos os dias pela bênção de compartilhar a vida ao seu lado, minha princesa mais linda. Que este dia especial se repita por muitos e muitos anos. Enquanto eu estiver vivo, quero ter o privilégio de estar ao seu lado, celebrando a alegria de viver o seu aniversário com você.
-    </div>
-
-    <div class="section" data-aos="fade-up">
-        <h2>Nossas Memórias</h2>
-        <div class="photos">
-            <img src="img/praça.jpg" alt="Praça">
-            <img src="img/praia.jpg" alt="Praia">
-            <img src="img/virada.jpg" alt="Ano Novo">
-            <img src="img/salto.jpg" alt="Salto">
-            <img src="img/trialer.jpg" alt="Trailer">
-            <img src="img/top.jpg" alt="Topo">
-            <img src="img/natal.jpg" alt="Topo">
-            <img src="img/revelio.jpg" alt="Topo">
+        <div class="hero">
+            <h1>Feliz Aniversário, minha princesa!</h1>
+            <button onclick="scrollToNextSection()">Clique aqui, minha linda</button>
         </div>
-    </div>
 
-    <div class="section counters" data-aos="fade-up">
-        <h2>Nossos Momentos</h2>
-        <div class="counter">
-            Primeiro Beijo: <span id="timeSinceFirstKiss"></span>
-            <img src="img/escola.jpg" alt="Primeiro Beijo">
+        <div class="fade-in">
+            Eu te amo de uma forma surreal, meu amor. Ver você feliz é o que me traz felicidade. Agradeço a Deus todos os dias pela bênção de compartilhar a vida ao seu lado, minha princesa mais linda. Que este dia especial se repita por muitos e muitos anos. Enquanto eu estiver vivo, quero ter o privilégio de estar ao seu lado, celebrando a alegria de viver o seu aniversário com você.
         </div>
-        <div class="counter">
-            Tempo de Namoro: <span id="timeTogether"></span>
-            <img src="img/namoro.jpg" alt="Tempo de Namoro">
+
+        <div class="section" data-aos="fade-up">
+            <h2>Nossas Memórias</h2>
+            <div class="photos">
+                <img src="img/praça.jpg" alt="Praça">
+                <img src="img/praia.jpg" alt="Praia">
+                <img src="img/virada.jpg" alt="Ano Novo">
+                <img src="img/salto.jpg" alt="Salto">
+                <img src="img/trialer.jpg" alt="Trailer">
+                <img src="img/top.jpg" alt="Topo">
+                <img src="img/natal.jpg" alt="Topo">
+                <img src="img/revelio.jpg" alt="Topo">
+            </div>
         </div>
-    </div>
 
-    <div class="section message" data-aos="fade-up">
-        <h2>Eu te amo infinitamente</h2>
-        <p>Obrigado por cada momento. 
-        Você é o Amor da Minha Vida!</p>
-    </div>
+        <div class="section counters" data-aos="fade-up">
+            <h2>Nossos Momentos</h2>
+            <div class="counter">
+                Primeiro Beijo: <span id="timeSinceFirstKiss"></span>
+                <img src="img/escola.jpg" alt="Primeiro Beijo">
+            </div>
+            <div class="counter">
+                Tempo de Namoro: <span id="timeTogether"></span>
+                <img src="img/namoro.jpg" alt="Tempo de Namoro">
+            </div>
+        </div>
 
-    <div class="footer">
-        <p>esse site custou 9999 beijos mim pague minha nega</p>
-    </div>
+        <div class="section message" data-aos="fade-up">
+            <h2>Eu te amo infinitamente</h2>
+            <p>Obrigado por cada momento. 
+            Você é o Amor da Minha Vida!</p>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
-    <script>
-        AOS.init();
+        <div class="footer">
+            <p>esse site custou 9999 beijos mim pague minha nega</p>
+        </div>
 
-        function scrollToNextSection() {
-            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-        }
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
+        <script>
+            AOS.init();
 
-        function calculateTimeDifference(startDate) {
-            const now = new Date();
-            const diff = now - startDate;
+            function scrollToNextSection() {
+                window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+            }
 
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            function calculateTimeDifference(startDate) {
+                const now = new Date();
+                const diff = now - startDate;
 
-            return `${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
-        }
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        const firstKissDate = new Date('2022-03-16T10:00:00');
-        const relationshipStartDate = new Date('2023-03-16');
+                return `${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+            }
 
-        function updateCounters() {
-            document.getElementById('timeSinceFirstKiss').textContent = calculateTimeDifference(firstKissDate);
-            document.getElementById('timeTogether').textContent = calculateTimeDifference(relationshipStartDate);
-            requestAnimationFrame(updateCounters);
-        }
+            const firstKissDate = new Date('2022-03-16T10:00:00');
+            const relationshipStartDate = new Date('2023-03-16');
 
-        updateCounters();
-    </script>
+            function updateCounters() {
+                document.getElementById('timeSinceFirstKiss').textContent = calculateTimeDifference(firstKissDate);
+                document.getElementById('timeTogether').textContent = calculateTimeDifference(relationshipStartDate);
+                requestAnimationFrame(updateCounters);
+            }
 
-</body>
-</html>
+            updateCounters();
+        </script>
+
+    </body>
+    </html>
