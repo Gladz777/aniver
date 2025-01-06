@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site especial de aniversário para minha namorada, com memórias e contadores emocionantes sobre nossa história.">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2220%22 fill=%22rgba(255,192,203,0.1)%22 text-anchor=%22middle%22%3E%26hearts%3B%3C/text%3E%3C/svg%3E');
+            background-repeat: repeat;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('img/IMG_3796.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 600px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #333;
+            background: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #ff85c5;
+        }
+
+        .fade-in {
+            font-size: 1.8em;
+            text-align: center;
+            margin: 60px auto;
+            max-width: 90%;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .photos img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(255, 192, 203, 0.5);
+        }
+
+        .counters {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .counter {
+            font-size: 1.2em;
+            color: #ff69b4;
+        }
+
+        .counter img {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(255, 192, 203, 0.5);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Feliz Aniversário, minha princesa!</h1>
+        <button onclick="scrollToNextSection()">Clique aqui, minha linda</button>
+    </div>
+
+    <div class="fade-in">
+        Eu te amo de uma forma surreal, meu amor. Ver você feliz é o que me traz felicidade. Agradeço a Deus todos os dias pela bênção de compartilhar a vida ao seu lado, minha princesa mais linda. Que este dia especial se repita por muitos e muitos anos. Enquanto eu estiver vivo, quero ter o privilégio de estar ao seu lado, celebrando a alegria de viver o seu aniversário com você.
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Nossas Memórias</h2>
+        <div class="photos">
+            <img src="img/praça.jpg" alt="Praça">
+            <img src="img/praia.jpg" alt="Praia">
+            <img src="img/virada.jpg" alt="Ano Novo">
+            <img src="img/salto.jpg" alt="Salto">
+            <img src="img/trialer.jpg" alt="Trailer">
+            <img src="img/top.jpg" alt="Topo">
+        </div>
+    </div>
+
+    <div class="section counters" data-aos="fade-up">
+        <h2>Nossos Momentos</h2>
+        <div class="counter">
+            Primeiro Beijo: <span id="timeSinceFirstKiss"></span>
+            <img src="img/escola.jpg" alt="Primeiro Beijo">
+        </div>
+        <div class="counter">
+            Tempo de Namoro: <span id="timeTogether"></span>
+            <img src="img/namoro.jpg" alt="Tempo de Namoro">
+        </div>
+    </div>
+
+    <div class="section message" data-aos="fade-up">
+        <h2>Eu te amo infinitamente</h2>
+        <p>Desde o dia que te conheci, minha vida ganhou mais cor. Obrigado por cada momento lindo que compartilhamos!</p>
+    </div>
+
+    <div class="footer">
+        <p>Feito com muito amor por mim mesmo</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function scrollToNextSection() {
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+        }
+
+        function calculateTimeDifference(startDate) {
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            return `${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+        }
+
+        const firstKissDate = new Date('2022-03-16T10:00:00');
+        const relationshipStartDate = new Date('2023-03-16');
+
+        function updateCounters() {
+            document.getElementById('timeSinceFirstKiss').textContent = calculateTimeDifference(firstKissDate);
+            document.getElementById('timeTogether').textContent = calculateTimeDifference(relationshipStartDate);
+            requestAnimationFrame(updateCounters);
+        }
+
+        updateCounters();
+    </script>
+
+</body>
+</html>
